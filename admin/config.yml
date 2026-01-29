@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: Arunphalke/ulitra-v2 # Replace with your GitHub name if different
+  repo: Arunphalke/ulitra-v2
   branch: main
+  base_url: https://auth.sveltia.org
+  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "/images"
