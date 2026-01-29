@@ -2,21 +2,15 @@ backend:
   name: github
   repo: Arunphalke/ulitra-v2
   branch: main
-  base_url: https://auth.sveltia.org
-  auth_endpoint: /auth
-
 media_folder: "images"
 public_folder: "/images"
-
 collections:
   - name: "products"
     label: "Products"
     folder: "products"
     create: true
-    slug: "ul-{{code}}"
     fields:
-      - {label: "Product Code (Example: 111)", name: "code", widget: "number"}
-      - {label: "Product Name", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Beauty", "Gadgets", "Home", "Fashion"]}
-      - {label: "Product Image", name: "image", widget: "image"}
-      - {label: "Affiliate Link", name: "link", widget: "string"}
+      - {label: "Code", name: "code", widget: "number"}
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
